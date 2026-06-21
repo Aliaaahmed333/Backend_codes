@@ -14,7 +14,8 @@
             <span class="text-uppercase font-sm letter-spacing-1">January 17,2019</span>
         </div>
         <div class="post-featured-image mt-5">
-            <img src="images/fashion/bg-banner.jpg" class="img-fluid w-100" alt="featured-image">
+
+            <img src="{{ asset('images/fashion/bg-banner.jpg') }}" class="img-fluid w-100" alt="featured-image">
         </div>
     </div>
     <div class="post-body">
@@ -28,10 +29,11 @@
 
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <img src="images/fashion/single-img1.png" alt="post-ads" class="img-fluid mr-4 w-100">
+
+                    <img src="{{ asset('images/fashion/single-img1.png') }}"alt="post-ads" class="img-fluid mr-4 w-100">
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <img src="images/fashion/single-img2.png" alt="post-ads" class="img-fluid mr-4 w-100">
+                    <img src="{{ asset('images/fashion/single-img2.png') }}" alt="post-ads" class="img-fluid mr-4 w-100">
                 </div>
             </div>
             <h3 class="mt-5 mb-3">Enjoying the view of summer</h3>
