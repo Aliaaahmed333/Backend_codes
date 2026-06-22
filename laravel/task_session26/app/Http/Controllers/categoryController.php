@@ -13,10 +13,11 @@ class categoryController extends Controller
   public function create_category ()
   {
     category::create([['name'=>'sports'],['name' => 'technology']]);
+    return "created successfully";
   }
 
 
-  public function read_category ()
+  public function get_categories ()
   {
      // read
     $categories= category::all();
@@ -28,13 +29,14 @@ class categoryController extends Controller
     // update
     $c = category::find(1);
     $c->update(['name'=>  'religious'])  ;
-
+    return "updated";
   }
 
   public function delete_category ()
   {
     // delete
-    category::find(2)->delete();
+    $p= category::find(2)->delete();
+    dd($p);
   }
 
 
